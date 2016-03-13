@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+    <title>Guess the number!</title>
+  </head>
+  <body>
+    <div id="app">
+    <nav>
+      <header >This is a numbers guessing game! play responsibly!!</header>
+    </nav>
+      <div>
+        <div class="head">Select your Range<div>
+        <input class="textf" type="text" value= 'Lowest Number'id="userInputRangeLow"/>
+        and
+        <input class="textf" type="text" value= 'highest Number'id="userInputRangeHigh"/>
+      </div>
+      <input type="button" id="submitBtn2" value="Pick" onclick="getRange(userInputRangeLowEl.value, userInputRangeHighEl.value)"/>
+      <div>
+        <div class="head">
+        Then guess what number i have pick for you.
+        </div>
+        <input class="textf" type="text" id="userInput"/>
+      </div>
+      <input type="button" id="submitBtn" value="Start" onclick="guessingGame(userInputEl.value)"/>
+      <INPUT TYPE="button" onClick="history.go(0)" VALUE="Play Again">
+    </div>
+    <div id="msgDisplay"></div>
+    <script type="text/javascript" src="scripts/main.js"></script>
+    
+
+  </body>
+</html>
